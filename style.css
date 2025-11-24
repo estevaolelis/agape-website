@@ -6,9 +6,9 @@
 
 :root {
   /* CORES INSTITUCIONAIS DO PROJETO ÁGAPE */
-  --primary: #F15A29;        /* Laranja oficial (logo) */
-  --primary-dark: #D94822;   /* Laranja escuro (degradê) */
-  --secondary: #F9D59B;      /* Amarelo claro dos posts */
+  --primary: #F15A29;       /* Laranja do logo */
+  --primary-dark: #C2104E;  /* O tom vinho da ponta esquerda do coração */
+  --secondary: #FF8C00;      /* Amarelo claro dos posts */
   --white: #FFFFFF;  
   --black: #000000;
 
@@ -45,9 +45,19 @@ nav {
 }
 
 .logo {
-  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espaço entre imagem e texto */
+  font-size: 1.5rem;
   font-weight: bold;
   color: var(--primary);
+  text-decoration: none; /* Caso transforme em link */
+}
+
+.logo-img {
+  height: 50px; /* Ajuste conforme necessário */
+  width: auto;
+  border-radius: 50%; /* Opcional: deixa o logo redondo se for quadrado */
 }
 
 .nav-links {
@@ -84,7 +94,8 @@ nav {
 
 /* HERO SECTION */
 .hero {
-  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 50%, var(--secondary) 100%); 
+  border-bottom-right-radius: 80px;
   color: var(--white);
   text-align: center;
   padding: 8rem 2rem;
@@ -125,7 +136,7 @@ nav {
 
 .btn-primary {
   background: var(--white);
-  color: var(--primary);
+  color: var(--primary-dark); /* Texto na cor escura para contraste */
 }
 
 .btn-primary:hover {
@@ -371,6 +382,45 @@ footer p {
 .page.active {
   display: block;
 }
+
+/* PARCEIROS */
+.parceiros-section {
+  text-align: center;
+  margin-top: 4rem;
+  background: var(--light);
+  padding: 3rem 2rem;
+  border-radius: 20px;
+}
+
+.parceiros-section h3 {
+  color: var(--dark);
+  margin-bottom: 2rem;
+}
+
+.parceiros-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem; /* Espaço entre os logos */
+  flex-wrap: wrap;
+}
+
+.parceiros-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.parceiros-item img {
+  height: 80px; /* Tamanho padronizado para os logos */
+  width: auto;
+  object-fit: contain;
+  transition: filter 0.3s ease;
+  mix-blend-mode: multiply; /* Remove o fundo branco do JPG se o fundo da div for claro */
+}
+
+
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
