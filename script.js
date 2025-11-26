@@ -43,7 +43,6 @@ function handleSubmit(event) {
   event.target.reset();
 }
 
-// Close mobile menu when clicking outside
 document.addEventListener("click", function (event) {
   const nav = document.querySelector("nav");
   const navLinks = document.getElementById("navLinks");
@@ -54,7 +53,6 @@ document.addEventListener("click", function (event) {
   }
 });
 
-// Smooth scroll for better UX
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     const href = this.getAttribute("href");
@@ -62,4 +60,20 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       e.preventDefault();
     }
   });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  const slides = document.querySelectorAll(".carousel-slide");
+  let currentSlide = 0;
+  const slideInterval = 5000;
+
+  if (slides.length > 0) {
+    setInterval(() => {
+      slides[currentSlide].classList.remove("active");
+      
+      currentSlide = (currentSlide + 1) % slides.length;
+      
+      slides[currentSlide].classList.add("active");
+    }, slideInterval);
+  }
 });

@@ -33,24 +33,34 @@
     <!-- HOME PAGE -->
     <div id="home" class="page active">
       <!-- HERO SECTION -->
+      <!-- HERO SECTION -->
       <section class="hero">
-        <h1>Transformando vidas e comunidades</h1>
-        <p>
-          Há 11 anos o Projeto Ágape vai além de ser apenas um programa de esportes, arte ou educação. Nossa missão é impactar profundamente a vida de crianças, adolescentes e famílias da região Norte de São José dos Campos, trazendo esperança, fé e transformação através do amor de Cristo.
-        </p>
-        <div class="cta-buttons">
-          <a href="#" class="btn btn-primary" onclick="showPage('ajudar')"
-            >Como posso ajudar?</a
-          >
-          <a href="#" class="btn btn-secondary" onclick="showPage('ajudar')"
-            >Quero doar</a
-          >
-          <a href="#" class="btn btn-secondary" onclick="showPage('ajudar')"
-            >Quero ser voluntário</a
-          >
-          <a href="#" class="btn btn-secondary" onclick="showPage('atividades')"
-            >Atividades oferecidas</a
-          >
+        <div class="hero-carousel">
+          <div class="carousel-slide active" style="background-image: url('images/carousel1.jpg')"></div>
+          <div class="carousel-slide" style="background-image: url('images/carousel1.jpg')"></div>
+          <div class="carousel-slide" style="background-image: url('images/carousel1.jpg')"></div>
+          <div class="carousel-overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+          <h1>Projeto Ágape – Transformando Vidas</h1>
+          <p>
+            A transformação de vidas começa quando nos unimos em propósito e ação! Há 11 anos o Projeto Ágape vai além de ser apenas um programa de esportes, arte ou educação. Nossa missão é impactar profundamente a vida de crianças, adolescentes e famílias da região Norte de São José dos Campos, trazendo esperança, fé e transformação através do amor de Cristo.
+          </p>
+          <div class="cta-buttons">
+            <a href="#" class="btn btn-primary" onclick="showPage('ajudar')"
+              >Como posso ajudar?</a
+            >
+            <a href="#" class="btn btn-secondary" onclick="showPage('ajudar')"
+              >Quero doar</a
+            >
+            <a href="#" class="btn btn-secondary" onclick="showPage('ajudar')"
+              >Quero ser voluntário</a
+            >
+            <a href="#" class="btn btn-secondary" onclick="showPage('atividades')"
+              >Atividades oferecidas</a
+            >
+          </div>
         </div>
       </section>
 
@@ -63,15 +73,16 @@
         <div class="about-content">
           <div class="about-text">
             <p>
-              O Projeto Ágape é uma iniciativa de <strong>SportsLink Brasil</strong>, um ministério da <strong>OM Brasil</strong> dedicado a ser uma comunidade vibrante de seguidores de Cristo que serve através do esporte, artes e educação, na região Norte de São José dos Campos – São Paulo.
+              O Projeto Ágape é uma iniciativa de <strong>SportsLink Brasil</strong>. Um ministério da <strong>OM Brasil</strong> dedicado a ser uma comunidade vibrante de seguidores de Cristo que serve através do esporte, artes e educação, na região Norte de São José dos Campos – São Paulo.
             </p>
             <p>
-              Hoje atendemos crianças e adolescentes, mas queremos atender toda
-              a comunidade. Pensamos constantemente em estratégias para alcançar
-              mais pessoas, como a confeitaria voltada para adultos.
+              <strong>Visão:</strong> Ver comunidades vibrantes de seguidores de Jesus em todos os lugares. Queremos ser um espaço de acolhimento, onde o amor de Deus transforma vidas e forma uma geração forte em fé, valores e propósito.
             </p>
             <p>
-              Um ministério da <strong>OM Brasil</strong> em parceria com a <strong>SportsLink Brasil</strong>
+              <strong>Desafio:</strong> Em muitas comunidades ao redor do mundo, crianças, adolescentes e famílias enfrentam desafios diários. São expostas a ambientes de risco, falta de recursos e ausência de suporte espiritual e emocional. O Projeto Ágape busca preencher essa lacuna oferecendo um ambiente seguro e inspirador, onde possam aprender, se desenvolver e, acima de tudo, conhecer o amor de Deus.
+            </p>
+            <p>
+               <strong>Estratégia:</strong> Conectar e construir valores sólidos, desenvolver habilidades para a vida e compartilhar a esperança do Evangelho. Queremos ser um lugar de transformação que reflita o amor de Deus em ação!
             </p>
             <a href="#" class="btn btn-primary" onclick="showPage('sobre')"
               >Saiba mais sobre nós</a
@@ -86,9 +97,9 @@
 
       <section>
         <h2>Impacto</h2>
-        <p class="subtitle">120 crianças e adolescentes atendidos</p>
+        <p class="subtitle">Hoje o Projeto Ágape atende em torno de 120 crianças e adolescentes.</p>
         <p style="text-align:center; max-width:700px; margin:0 auto;">
-          Nosso trabalho não é medido por números, mas por <strong>histórias de vidas transformadas</strong>.
+          Mas nosso trabalho não é medido apenas por números, e sim por <strong>histórias de vidas transformadas</strong>.
         </p>
       </section>
 
@@ -100,99 +111,59 @@
         </p>
         <div class="cards-container">
           <div class="card">
+            <div class="card-image">⚽</div>
+            <div class="card-content">
+              <h3>Futsal</h3>
+              <p>Crianças de 5 a 16 anos.</p>
+              <a href="#" class="btn btn-primary" onclick="showPage('atividades')">Saiba mais</a>
+            </div>
+          </div>
+          <div class="card">
             <div class="card-image">🩰</div>
             <div class="card-content">
               <h3>Ballet</h3>
-              <p>
-                Aulas de ballet clássico para desenvolver coordenação,
-                disciplina e expressão artística.
-              </p>
-              <a
-                href="#"
-                class="btn btn-primary"
-                onclick="showPage('atividades')"
-                >Saiba mais</a
-              >
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-image">⚽</div>
-            <div class="card-content">
-              <h3>Futebol</h3>
-              <p>
-                Treinos de futebol que promovem trabalho em equipe, saúde e
-                valores cristãos.
-              </p>
-              <a
-                href="#"
-                class="btn btn-primary"
-                onclick="showPage('atividades')"
-                >Saiba mais</a
-              >
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-image">🏐</div>
-            <div class="card-content">
-              <h3>Vôlei</h3>
-              <p>
-                Aulas de vôlei que desenvolvem coordenação, espírito esportivo e
-                união.
-              </p>
-              <a
-                href="#"
-                class="btn btn-primary"
-                onclick="showPage('atividades')"
-                >Saiba mais</a
-              >
+              <p>Crianças de 3 a 16 anos.</p>
+              <a href="#" class="btn btn-primary" onclick="showPage('atividades')">Saiba mais</a>
             </div>
           </div>
           <div class="card">
             <div class="card-image">🇬🇧</div>
             <div class="card-content">
-              <h3>Inglês</h3>
-              <p>
-                Ensino de inglês para abrir portas e ampliar oportunidades
-                futuras.
-              </p>
-              <a
-                href="#"
-                class="btn btn-primary"
-                onclick="showPage('atividades')"
-                >Saiba mais</a
-              >
+              <h3>English Club</h3>
+              <p>Crianças de 8 a 12 anos.</p>
+              <a href="#" class="btn btn-primary" onclick="showPage('atividades')">Saiba mais</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">🏐</div>
+            <div class="card-content">
+              <h3>Vôlei Recreativo</h3>
+              <p>A partir de 12 anos.</p>
+              <a href="#" class="btn btn-primary" onclick="showPage('atividades')">Saiba mais</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">📖</div>
+            <div class="card-content">
+              <h3>Conexão Ágape</h3>
+              <p>Para todas as idades!</p>
+              <a href="#" class="btn btn-primary" onclick="showPage('atividades')">Saiba mais</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">🥋</div>
+            <div class="card-content">
+              <h3>Kung Fu</h3>
+              <p>Crianças de 7 a 15 anos.</p>
+              <a href="#" class="btn btn-primary" onclick="showPage('atividades')">Saiba mais</a>
             </div>
           </div>
           <div class="card">
             <div class="card-image">🎸</div>
             <div class="card-content">
               <h3>Violão</h3>
-              <p>
-                Aulas de violão para desenvolver habilidades musicais e
-                expressão artística.
-              </p>
-              <a
-                href="#"
-                class="btn btn-primary"
-                onclick="showPage('atividades')"
-                >Saiba mais</a
-              >
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-image">📖</div>
-            <div class="card-content">
-              <h3>Estudos Bíblicos</h3>
-              <p>
-                Momentos de aprendizado, reflexão e fortalecimento da fé através
-                da Palavra.
-              </p>
-              <a
-                href="#"
-                class="btn btn-primary"
-                onclick="showPage('atividades')"
-                >Saiba mais</a
-              >
+              <p>Crianças de 7 a 15 anos.</p>
+              <a href="#" class="btn btn-primary" onclick="showPage('atividades')">Saiba mais</a>
             </div>
           </div>
         </div>
@@ -212,55 +183,76 @@
           </div>
           <div class="about-text">
             <h3 style="color: var(--primary); margin-bottom: 1rem">
-              Nossa História
+              Quem Somos
             </h3>
             <p>
-              O Projeto Ágape SJC nasceu do desejo de transformar vidas e
-              comunidades através do amor de Cristo. Iniciamos nossas atividades
-              oferecendo aulas de esporte, arte e educação para crianças e
-              adolescentes em situação de vulnerabilidade social.
+              O Projeto Ágape é uma iniciativa de SportsLink Brasil. Um ministério da OM Brasil dedicado a ser uma comunidade vibrante de seguidores de Cristo que serve através do esporte, artes e educação, na região Norte de São José dos Campos – São Paulo.
             </p>
             <p>
-              Hoje, atendemos dezenas de crianças e adolescentes, mas nosso
-              sonho é alcançar toda a comunidade. Estamos sempre pensando em
-              novas estratégias, como a confeitaria voltada para adultos,
-              especialmente as mães do projeto.
+              A transformação de vidas começa quando nos unimos em propósito e ação! Há 11 anos o Projeto Ágape vai além de ser apenas um programa de esportes, arte ou educação. Nossa missão é impactar profundamente a vida de crianças, adolescentes e famílias da região Norte de São José dos Campos, trazendo esperança, fé e transformação através do amor de Cristo.
             </p>
           </div>
         </div>
 
         <div style="margin-top: 4rem">
-          <h3
-            style="color: var(--primary); font-size: 2rem; margin-bottom: 2rem"
-          >
-            Missão, Visão e Valores
+          <h3 style="color: var(--primary); font-size: 2rem; margin-bottom: 2rem">
+            Nossa Visão e Estratégia
           </h3>
           <div class="cards-container">
             <div class="card">
               <div class="card-content">
-                <h3>🎯 Missão</h3>
-                <p>
-                  Transformar vidas e comunidades através do amor de Deus,
-                  usando esporte, artes, educação e discipulado como ferramentas
-                  de desenvolvimento integral.
-                </p>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-content">
                 <h3>👁️ Visão</h3>
                 <p>
-                   Ver comunidades vibrantes de seguidores de Jesus em todos os lugares. Queremos ser um espaço de acolhimento, onde o amor de Deus transforma vidas e forma uma geração forte em fé, valores e propósito.
+                  Ver comunidades vibrantes de seguidores de Jesus em todos os lugares. Queremos ser um espaço de acolhimento, onde o amor de Deus transforma vidas e forma uma geração forte em fé, valores e propósito.
                 </p>
               </div>
             </div>
             <div class="card">
               <div class="card-content">
-                <h3>💎 Valores</h3>
+                <h3>⚠️ Desafio</h3>
                 <p>
-                  Amor ao próximo, fé cristã, comunidade, desenvolvimento
-                  integral, serviço, esperança e propósito.
+                  Em muitas comunidades ao redor do mundo, crianças, adolescentes e famílias enfrentam desafios diários. São expostas a ambientes de risco, falta de recursos e ausência de suporte espiritual e emocional. O Projeto Ágape busca preencher essa lacuna oferecendo um ambiente seguro e inspirador.
                 </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content">
+                <h3>� Estratégia</h3>
+                <p>
+                  Conectar e construir valores sólidos, desenvolver habilidades para a vida e compartilhar a esperança do Evangelho. Queremos ser um lugar de transformação que reflita o amor de Deus em ação!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 4rem">
+          <h3 style="color: var(--primary); font-size: 2rem; margin-bottom: 2rem">
+            Áreas de Atuação
+          </h3>
+          <div class="cards-container">
+             <div class="card">
+              <div class="card-content">
+                <h3>⚽ Ministério Esportivo</h3>
+                <p>Usando o esporte como ferramenta para ensinar sobre Jesus, caráter, disciplina e trabalho em equipe.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content">
+                <h3>🎨 Arte e Educação</h3>
+                <p>Programas criativos que inspiram aprendizado, expressão e propósito.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content">
+                <h3>🙏 Discipulado</h3>
+                <p>Caminhando ao lado de jovens e famílias na fé e crescimento espiritual.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content">
+                <h3>🤝 Engajamento Comunitário</h3>
+                <p>Fortalecendo laços e criando rede de apoio local.</p>
               </div>
             </div>
           </div>
@@ -294,48 +286,35 @@
 
         <div class="cards-container">
           <div class="card">
-            <div class="card-image">🩰</div>
+            <div class="card-image">⚽</div>
             <div class="card-content">
-              <h3>Ballet</h3>
-              <p>
-                Aulas de ballet clássico que desenvolvem coordenação motora,
-                disciplina, postura e expressão artística. Uma atividade que
-                transforma meninas em bailarinas confiantes.
-              </p>
-              <p>
-                <strong>Horários:</strong>
-                <!-- TODO: Adicionar horários reais -->
-              </p>
-              <p style="color: #999">
-                Todas as terças: <br>
-                Ballet 1 — 3 a 10 anos <br>
-                Ballet 2 — 11 a 16 anos
-              </p>
-              <a href="#" class="btn btn-primary" onclick="showPage('contato')"
-                >Quero participar</a
-              >
+              <h3>Futsal</h3>
+              <p>Crianças de 5 a 16 anos.</p>
+              <p><strong>Sub 8 e 10:</strong> Terça-feira, das 18h às 21h</p>
+              <p><strong>Sub 12, 14 e 16:</strong> Quinta-feira, das 18h às 21h</p>
+              <a href="#" class="btn btn-primary" onclick="showPage('contato')">Quero participar</a>
             </div>
           </div>
 
           <div class="card">
-            <div class="card-image">⚽</div>
+            <div class="card-image">🩰</div>
             <div class="card-content">
-              <h3>Futsal</h3>
-              <p>
-                Treinos de futebol que ensinam muito mais que técnica: trabalho
-                em equipe, respeito, disciplina e valores cristãos. Formamos
-                atletas e cidadãos.
-              </p>
-              <p>
-                <strong>Horários:</strong>
-                <p style="color: #999">
-                Sub 8 e Sub 10 — Terça-feira, 18h às 21h <br>
-                Sub 12, 14 e 16 — Quinta-feira, 18h às 21h
-                </p>
-              </p>
-              <a href="#" class="btn btn-primary" onclick="showPage('contato')"
-                >Quero participar</a
-              >
+              <h3>Ballet</h3>
+              <p>Crianças de 3 a 16 anos.</p>
+              <p><strong>Todas as terças:</strong></p>
+              <p>Ballet 1 — 3 a 10 anos</p>
+              <p>Ballet 2 — 11 a 16 anos</p>
+              <a href="#" class="btn btn-primary" onclick="showPage('contato')">Quero participar</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">�🇧</div>
+            <div class="card-content">
+              <h3>English Club</h3>
+              <p>Crianças de 8 a 12 anos.</p>
+              <p><strong>Segunda-feira:</strong> das 18h às 19h30</p>
+              <a href="#" class="btn btn-primary" onclick="showPage('contato')">Quero participar</a>
             </div>
           </div>
 
@@ -343,68 +322,9 @@
             <div class="card-image">🏐</div>
             <div class="card-content">
               <h3>Vôlei Recreativo</h3>
-              <p>
-                Aulas de vôlei que promovem coordenação, agilidade, espírito
-                esportivo e união. Uma modalidade que ensina a importância do
-                trabalho coletivo.
-              </p>
-              <p>
-                <strong>Horários:</strong>
-                <p style="color: #999">Segunda — 18h às 20h30</p>
-              </p>
-              <a href="#" class="btn btn-primary" onclick="showPage('contato')"
-                >Quero participar</a
-              >
-            </div>
-          </div>
-
-          <div class="card">
-              <div class="card-image">🥋</div>
-              <div class="card-content">
-                <h3>Kung Fu</h3>
-                <p>Crianças de 7 a 15 anos.</p>
-                <p><strong trong>Horários:</strong></p>
-                <p style="color:#999">Quartas e sextas — 19h às 20h30</p>
-                <a href="#" class="btn btn-primary" onclick="showPage('contato')">Quero participar</a>
-              </div>
-            </div>
-
-          <div class="card">
-            <div class="card-image">🇬🇧</div>
-            <div class="card-content">
-              <h3>English Club</h3>
-              <p>
-                Ensino de inglês de qualidade para abrir portas, ampliar
-                horizontes e criar oportunidades futuras. Aprender um novo
-                idioma é transformador!
-              </p>
-              <p>
-                <strong>Horários:</strong>
-                <p style="color: #999">Segunda — 18h às 19h30</p>
-              </p>
-              <a href="#" class="btn btn-primary" onclick="showPage('contato')"
-                >Quero participar</a
-              >
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-image">🎸</div>
-            <div class="card-content">
-              <h3>Violão</h3>
-              <p>
-                Aulas de violão para desenvolver habilidades musicais, expressão
-                artística e fortalecer a autoestima. A música transforma e
-                liberta!
-              </p>
-              <p>
-                <strong>Horários:</strong>
-                <!-- TODO: Adicionar horários reais -->
-                <p style="color: #999">Sexta — 19h às 20h</p>
-              </p>
-              <a href="#" class="btn btn-primary" onclick="showPage('contato')"
-                >Quero participar</a
-              >
+              <p>A partir de 12 anos.</p>
+              <p><strong>Todas as segundas:</strong> das 18h às 20h30</p>
+              <a href="#" class="btn btn-primary" onclick="showPage('contato')">Quero participar</a>
             </div>
           </div>
 
@@ -412,18 +332,29 @@
             <div class="card-image">📖</div>
             <div class="card-content">
               <h3>Conexão Ágape</h3>
-              <p>
-                Momentos especiais de aprendizado, reflexão e fortalecimento da
-                fé através da Palavra de Deus. Crescimento espiritual em
-                comunidade.
-              </p>
-              <p>
-                <strong>Horários:</strong>
-                <p style="color: #999">Estudo Bíblico — 18h às 19h</p>
-              </p>
-              <a href="#" class="btn btn-primary" onclick="showPage('contato')"
-                >Quero participar</a
-              >
+              <p>Para todas as idades!</p>
+              <p><strong>Estudo Bíblico:</strong> das 18h às 19h</p>
+              <a href="#" class="btn btn-primary" onclick="showPage('contato')">Quero participar</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">🥋</div>
+            <div class="card-content">
+              <h3>Kung Fu</h3>
+              <p>Crianças de 7 a 15 anos.</p>
+              <p><strong>Quartas e sextas-feiras:</strong> das 19h às 20h30</p>
+              <a href="#" class="btn btn-primary" onclick="showPage('contato')">Quero participar</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">🎸</div>
+            <div class="card-content">
+              <h3>Violão</h3>
+              <p>Crianças de 7 a 15 anos.</p>
+              <p><strong>Sextas-feiras:</strong> das 19h às 20h</p>
+              <a href="#" class="btn btn-primary" onclick="showPage('contato')">Quero participar</a>
             </div>
           </div>
         </div>
@@ -433,208 +364,55 @@
     <!-- COMO AJUDAR PAGE -->
     <div id="ajudar" class="page">
       <section style="padding-top: 4rem">
-        <h2>Como Você Pode Ajudar</h2>
+        <h2>Faça Parte</h2>
         <p class="subtitle">
-          Existem várias formas de fazer a diferença na vida de muitas pessoas
+          Junte-se a nós e nos ajude a seguir transformando vidas e comunidades!
         </p>
 
-        <!-- QUERO DOAR -->
-        <div style="margin-top: 6rem">
-          <h3
-            style="
-              color: var(--primary);
-              font-size: 2.5rem;
-              text-align: center;
-              margin-bottom: 3rem;
-            "
-          >
-            💝 Quero Doar
-          </h3>
-          <div
-            style="
-              background: var(--light);
-              padding: 3rem;
-              border-radius: 20px;
-              text-align: center;
-              max-width: 700px;
-              margin: 0 auto;
-            "
-          >
-            <p style="font-size: 1.3rem; margin-bottom: 2rem">
-              Sua ajuda transforma vidas! Cada contribuição possibilita que mais crianças e famílias sejam alcançadas através do esporte, artes, educação e discipulado.
-            </p>
-            <p style="font-size: 1.1rem; margin-bottom: 2rem">
-              Você pode doar qualquer valor, de forma única ou recorrente. Obrigado por fazer parte do que Deus está fazendo através do Ágape!
-            </p>
-            <a href="#" class="btn btn-primary" onclick="showPage('contato')"
-              >Quero fazer uma doação</a
-            >
-          </div>
-        </div>
-
-        <!-- QUERO SER VOLUNTÁRIO -->
-        <div style="margin-top: 6rem">
-          <h3
-            style="
-              color: var(--primary);
-              font-size: 2.5rem;
-              text-align: center;
-              margin-bottom: 3rem;
-            "
-          >
-            🙋 Quero Ser Voluntário
-          </h3>
-          <div
-            style="
-              background: var(--light);
-              padding: 3rem;
-              border-radius: 20px;
-              text-align: center;
-              max-width: 700px;
-              margin: 0 auto;
-            "
-          >
-            <p style="font-size: 1.3rem; margin-bottom: 2rem">
-              Você tem tempo e talento para compartilhar? Venha fazer parte da
-              nossa equipe de voluntários!
-            </p>
-            <p style="font-size: 1.1rem; margin-bottom: 2rem">
-              Entre em contato conosco e vamos conversar sobre como você pode
-              contribuir!
-            </p>
-            <a href="#" class="btn btn-primary" onclick="showPage('contato')"
-              >Quero me voluntariar</a
-            >
-          </div>
-
-          <!-- TODO: No futuro, integrar lista dinâmica de vagas de voluntariado via API -->
-        </div>
-
-        <!-- DEMANDAS ABERTAS -->
-        <div style="margin-top: 6rem">
-          <h3
-            style="
-              color: var(--primary);
-              font-size: 2.5rem;
-              text-align: center;
-              margin-bottom: 3rem;
-            "
-          >
-            📋 Demandas Abertas
-          </h3>
-          <p
-            style="
-              text-align: center;
-              font-size: 1.2rem;
-              margin-bottom: 3rem;
-              max-width: 700px;
-              margin-left: auto;
-              margin-right: auto;
-            "
-          >
-            Estas são algumas necessidades específicas do projeto. Se você pode
-            ajudar com alguma delas, ficaremos muito gratos!
-          </p>
-
-          <div class="cards-container">
-            <div class="card">
-              <div class="card-content">
-                <h3>🎸 Professor de Violão</h3>
-                <p>
-                  Precisamos de um professor de violão voluntário para ampliar
-                  nossas turmas e atender mais alunos.
-                </p>
-                <a
-                  href="#"
-                  class="btn btn-primary"
-                  onclick="showPage('contato')"
-                  >Posso ajudar</a
-                >
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-content">
-                <h3>🏐 Ajudante de Vôlei</h3>
-                <p>
-                  Buscamos um assistente para as aulas de vôlei, que possa
-                  ajudar com a organização e suporte aos alunos.
-                </p>
-                <a
-                  href="#"
-                  class="btn btn-primary"
-                  onclick="showPage('contato')"
-                  >Posso ajudar</a
-                >
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-content">
-                <h3>🎨 Pintura do Espaço do Ballet</h3>
-                <p>
-                  Precisamos de voluntários para pintar e revitalizar o espaço
-                  onde acontecem as aulas de ballet.
-                </p>
-                <a
-                  href="#"
-                  class="btn btn-primary"
-                  onclick="showPage('contato')"
-                  >Posso ajudar</a
-                >
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-content">
-                <h3>📚 Material Didático</h3>
-                <p>
-                  Precisamos de doações de material escolar, livros didáticos e
-                  material de arte para nossas atividades.
-                </p>
-                <a
-                  href="#"
-                  class="btn btn-primary"
-                  onclick="showPage('contato')"
-                  >Posso ajudar</a
-                >
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-content">
-                <h3>💻 Apoio com Tecnologia</h3>
-                <p>
-                  Buscamos voluntários para ajudar com divulgação nas redes
-                  sociais, design gráfico e manutenção do site.
-                </p>
-                <a
-                  href="#"
-                  class="btn btn-primary"
-                  onclick="showPage('contato')"
-                  >Posso ajudar</a
-                >
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-content">
-                <h3>🚐 Transporte</h3>
-                <p>
-                  Precisamos de apoio para transporte de materiais, equipamentos
-                  e eventualmente dos alunos.
-                </p>
-                <a
-                  href="#"
-                  class="btn btn-primary"
-                  onclick="showPage('contato')"
-                  >Posso ajudar</a
-                >
-              </div>
+        <div class="cards-container" style="margin-top: 4rem">
+          <div class="card">
+            <div class="card-image">🙏</div>
+            <div class="card-content">
+              <h3>Ore Conosco</h3>
+              <p>
+                Cremos que o resultado depende somente de Deus.
+              </p>
+              <a href="#" class="btn btn-primary" onclick="showPage('contato')">Quero orar</a>
             </div>
           </div>
 
-          <!-- TODO: No futuro, tornar essa seção dinâmica com dados de uma API ou banco de dados -->
+          <div class="card">
+            <div class="card-image">🙋</div>
+            <div class="card-content">
+              <h3>Seja Voluntário</h3>
+              <p>
+                Sua dedicação pode mudar vidas.
+              </p>
+              <a href="#" class="btn btn-primary" onclick="showPage('contato')">Quero ser voluntário</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">💝</div>
+            <div class="card-content">
+              <h3>Seja Parceiro Financeiro</h3>
+              <p>
+                Contribuições fortalecem e expandem as atividades.
+              </p>
+              <a href="#" class="btn btn-primary" onclick="showPage('contato')">Quero doar</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">📢</div>
+            <div class="card-content">
+              <h3>Compartilhe</h3>
+              <p>
+                Compartilhe nosso projeto — inspire outros a se envolverem.
+              </p>
+              <a href="https://www.instagram.com/proj.agape/" target="_blank" class="btn btn-primary">Ir para Instagram</a>
+            </div>
+          </div>
         </div>
       </section>
     </div>
@@ -854,7 +632,7 @@
             border-top: 1px solid rgba(255, 255, 255, 0.2);
           "
         >
-          <p>Um ministério da <strong>OM Brasil</strong> em parceria com a <strong>SportsLink Brasil</strong></p>
+          <p>UM MINISTÉRIO DA <strong>OM BRASIL</strong><br>Projeto Ágape – SportsLink Brasil</p>
           <p
             style="
               margin-top: 1rem;
