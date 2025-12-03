@@ -1,738 +1,651 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Ágape SJC - Transformando vidas e comunidades</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="agapeicon.png" type="image/x-icon" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projeto Ágape SJC - Transformando vidas e comunidades</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="shortcut icon" href="agapeicon.png" type="image/x-icon">
-</head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="images/agapeicon.png" alt="Logo Ágape" class="logo-img" />
+        </div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#" onclick="showPage('home')">Início</a></li>
+          <li><a href="#" onclick="showPage('sobre')">Sobre Nós</a></li>
+          <li><a href="#" onclick="showPage('atividades')">Atividades</a></li>
+          <li><a href="#" onclick="showPage('ajudar')">Como Ajudar</a></li>
+          <li><a href="#" onclick="showPage('contato')">Contato</a></li>
+        </ul>
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
 
-<body>
-  <!-- HEADER -->
-  <header>
-    <nav>
-      <div class="logo">
-        <img src="agapeicon.png" alt="Logo Ágape" class="logo-img">
-        <span>Projeto Ágape SJC</span>
-      </div>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#" onclick="showPage('home')">Início</a></li>
-        <li><a href="#" onclick="showPage('sobre')">Sobre Nós</a></li>
-        <li><a href="#" onclick="showPage('atividades')">Atividades</a></li>
-        <li><a href="#" onclick="showPage('ajudar')">Como Ajudar</a></li>
-        <li><a href="#" onclick="showPage('contato')">Contato</a></li>
-      </ul>
-      <div class="menu-toggle" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </nav>
-  </header>
-
-  <!-- HOME PAGE -->
-  <div id="home" class="page active">
-    <!-- HERO SECTION -->
-    <section class="hero">
-      <h1>Transformando vidas e comunidades</h1>
-      <p>
-        Compartilhamos do evangelho e oferecemos aulas de arte, educação e
-        esporte para crianças, adolescentes e toda a comunidade.
-      </p>
-      <div class="cta-buttons">
-        <a href="#" class="btn btn-primary" onclick="showPage('ajudar')">Como posso ajudar?</a>
-        <a href="#" class="btn btn-secondary" onclick="showPage('ajudar')">Quero doar</a>
-        <a href="#" class="btn btn-secondary" onclick="showPage('ajudar')">Quero ser voluntário</a>
-        <a href="#" class="btn btn-secondary" onclick="showPage('atividades')">Atividades oferecidas</a>
-      </div>
-    </section>
-
-    <!-- ABOUT PREVIEW -->
-    <section>
-      <h2>Quem Somos</h2>
-      <p class="subtitle">
-        Um projeto comprometido em transformar vidas através do evangelho,
-        educação, arte e esporte
-      </p>
-      <div class="about-content">
-        <div class="about-text">
+    <!-- HOME PAGE -->
+    <div id="home" class="page active">
+      <!-- HERO SECTION -->
+      <!-- HERO SECTION -->
+      <section class="hero">
+        <div class="hero-carousel">
+          <div class="carousel-slide active" style="background-image: url('images/carousel1.jpg')"></div>
+          <div class="carousel-slide" style="background-image: url('images/carousel1.jpg')"></div>
+          <div class="carousel-slide" style="background-image: url('images/carousel1.jpg')"></div>
+          <div class="carousel-overlay"></div>
+        </div>
+        
+        <div class="hero-content">
+          <h1>Projeto Ágape – Transformando Vidas</h1>
           <p>
-            <strong>O nosso intuito é transformar vidas e comunidades.</strong>
-            Por isso compartilhamos do evangelho e oferecemos aulas de arte,
-            educação e esporte.
+            A transformação de vidas começa quando nos unimos em propósito e ação! Há 11 anos o Projeto Ágape vai além de ser apenas um programa de esportes, arte ou educação. Nossa missão é impactar profundamente a vida de crianças, adolescentes e famílias da região Norte de São José dos Campos, trazendo esperança, fé e transformação através do amor de Cristo.
           </p>
-          <p>
-            Hoje atendemos crianças e adolescentes, mas queremos atender toda
-            a comunidade. Pensamos constantemente em estratégias para alcançar
-            mais pessoas, como a confeitaria voltada para adultos.
-          </p>
-          <p>
-            Somos ligados à <strong>OM</strong> e ao
-            <strong>Sportslink</strong>, organizações que compartilham da
-            nossa missão.
-          </p>
-          <a href="#" class="btn btn-primary" onclick="showPage('sobre')">Saiba mais sobre nós</a>
+          <div class="cta-buttons">
+            <a href="#" class="btn btn-primary" onclick="showPage('ajudar')"
+              >Como posso ajudar?</a
+            >
+            <a href="#" class="btn btn-secondary" onclick="showPage('ajudar')"
+              >Quero doar</a
+            >
+            <a href="#" class="btn btn-secondary" onclick="showPage('ajudar')"
+              >Quero ser voluntário</a
+            >
+            <a href="#" class="btn btn-secondary" onclick="showPage('atividades')"
+              >Atividades oferecidas</a
+            >
+          </div>
         </div>
-        <div class="about-image">
-          ❤️
-          <!-- TODO: Adicionar foto da equipe ou do projeto -->
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ACTIVITIES PREVIEW -->
-    <section>
-      <h2>Nossas Atividades</h2>
-      <p class="subtitle">
-        Oferecemos diversas atividades gratuitas para transformar vidas
-      </p>
-      <div class="cards-container">
-        <div class="card">
-          <div class="card-image">🩰</div>
-          <div class="card-content">
-            <h3>Ballet</h3>
+      <!-- ABOUT PREVIEW -->
+      <section>
+        <h2>Quem Somos</h2>
+        <p class="subtitle">
+          Uma iniciativa da SportsLink Brasil, ministério da OM Brasil
+        </p>
+        <div class="about-content">
+          <div class="about-text">
             <p>
-              Aulas de ballet clássico para desenvolver coordenação,
-              disciplina e expressão artística.
+              O Projeto Ágape é uma iniciativa de <strong>SportsLink Brasil</strong>. Um ministério da <strong>OM Brasil</strong> dedicado a ser uma comunidade vibrante de seguidores de Cristo que serve através do esporte, artes e educação, na região Norte de São José dos Campos – São Paulo.
             </p>
-            <a href="#" class="btn btn-primary" onclick="showPage('atividades')">Saiba mais</a>
+            <p>
+              <strong>Visão:</strong> Ver comunidades vibrantes de seguidores de Jesus em todos os lugares. Queremos ser um espaço de acolhimento, onde o amor de Deus transforma vidas e forma uma geração forte em fé, valores e propósito.
+            </p>
+            <p>
+              <strong>Desafio:</strong> Em muitas comunidades ao redor do mundo, crianças, adolescentes e famílias enfrentam desafios diários. São expostas a ambientes de risco, falta de recursos e ausência de suporte espiritual e emocional. O Projeto Ágape busca preencher essa lacuna oferecendo um ambiente seguro e inspirador, onde possam aprender, se desenvolver e, acima de tudo, conhecer o amor de Deus.
+            </p>
+            <p>
+               <strong>Estratégia:</strong> Conectar e construir valores sólidos, desenvolver habilidades para a vida e compartilhar a esperança do Evangelho. Queremos ser um lugar de transformação que reflita o amor de Deus em ação!
+            </p>
+            <a href="#" class="btn btn-primary" onclick="showPage('sobre')"
+              >Saiba mais sobre nós</a
+            >
+          </div>
+          <div class="about-image">
+            ❤️
+            <!-- TODO: Adicionar foto da equipe ou do projeto -->
           </div>
         </div>
-        <div class="card">
-          <div class="card-image">⚽</div>
-          <div class="card-content">
-            <h3>Futebol</h3>
-            <p>
-              Treinos de futebol que promovem trabalho em equipe, saúde e
-              valores cristãos.
-            </p>
-            <a href="#" class="btn btn-primary" onclick="showPage('atividades')">Saiba mais</a>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-image">🏐</div>
-          <div class="card-content">
-            <h3>Vôlei</h3>
-            <p>
-              Aulas de vôlei que desenvolvem coordenação, espírito esportivo e
-              união.
-            </p>
-            <a href="#" class="btn btn-primary" onclick="showPage('atividades')">Saiba mais</a>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-image">🇬🇧</div>
-          <div class="card-content">
-            <h3>Inglês</h3>
-            <p>
-              Ensino de inglês para abrir portas e ampliar oportunidades
-              futuras.
-            </p>
-            <a href="#" class="btn btn-primary" onclick="showPage('atividades')">Saiba mais</a>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-image">🎸</div>
-          <div class="card-content">
-            <h3>Violão</h3>
-            <p>
-              Aulas de violão para desenvolver habilidades musicais e
-              expressão artística.
-            </p>
-            <a href="#" class="btn btn-primary" onclick="showPage('atividades')">Saiba mais</a>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-image">📖</div>
-          <div class="card-content">
-            <h3>Estudos Bíblicos</h3>
-            <p>
-              Momentos de aprendizado, reflexão e fortalecimento da fé através
-              da Palavra.
-            </p>
-            <a href="#" class="btn btn-primary" onclick="showPage('atividades')">Saiba mais</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
+      </section>
 
-  <!-- SOBRE NÓS PAGE -->
-  <div id="sobre" class="page">
-    <section style="padding-top: 4rem">
-      <h2>Sobre o Projeto Ágape SJC</h2>
-      <p class="subtitle">Nossa história, missão e valores</p>
+      <section>
+        <h2>Impacto</h2>
+        <p class="subtitle">Hoje o Projeto Ágape atende em torno de 120 crianças e adolescentes.</p>
+        <p style="text-align:center; max-width:700px; margin:0 auto;">
+          Mas nosso trabalho não é medido apenas por números, e sim por <strong>histórias de vidas transformadas</strong>.
+        </p>
+      </section>
 
-      <div class="about-content">
-        <div class="about-image">
-          ✝️
-          <!-- TODO: Adicionar foto da equipe -->
-        </div>
-        <div class="about-text">
-          <h3 style="color: var(--primary); margin-bottom: 1rem">
-            Nossa História
-          </h3>
-          <p>
-            O Projeto Ágape SJC nasceu do desejo de transformar vidas e
-            comunidades através do amor de Cristo. Iniciamos nossas atividades
-            oferecendo aulas de esporte, arte e educação para crianças e
-            adolescentes em situação de vulnerabilidade social.
-          </p>
-          <p>
-            Hoje, atendemos dezenas de crianças e adolescentes, mas nosso
-            sonho é alcançar toda a comunidade. Estamos sempre pensando em
-            novas estratégias, como a confeitaria voltada para adultos,
-            especialmente as mães do projeto.
-          </p>
-        </div>
-      </div>
-
-      <div style="margin-top: 4rem">
-        <h3 style="color: var(--primary); font-size: 2rem; margin-bottom: 2rem">
-          Missão, Visão e Valores
-        </h3>
+      <!-- ACTIVITIES PREVIEW -->
+      <section>
+        <h2>Nossas Atividades</h2>
+        <p class="subtitle">
+          Oferecemos diversas atividades gratuitas para transformar vidas
+        </p>
         <div class="cards-container">
           <div class="card">
+            <div class="card-image">⚽</div>
             <div class="card-content">
-              <h3>🎯 Missão</h3>
-              <p>
-                Transformar vidas e comunidades através do evangelho,
-                oferecendo educação, arte e esporte como ferramentas de
-                desenvolvimento integral.
-              </p>
+              <h3>Futsal</h3>
+              <p>Crianças de 5 a 16 anos.</p>
+              <a href="#" class="btn btn-primary" onclick="showPage('atividades')">Saiba mais</a>
             </div>
           </div>
           <div class="card">
+            <div class="card-image">🩰</div>
             <div class="card-content">
-              <h3>👁️ Visão</h3>
-              <p>
-                Ser referência no atendimento comunitário, alcançando todas as
-                faixas etárias com amor, dignidade e oportunidades de
-                transformação.
-              </p>
+              <h3>Ballet</h3>
+              <p>Crianças de 3 a 16 anos.</p>
+              <a href="#" class="btn btn-primary" onclick="showPage('atividades')">Saiba mais</a>
             </div>
           </div>
           <div class="card">
+            <div class="card-image">🇬🇧</div>
             <div class="card-content">
-              <h3>💎 Valores</h3>
-              <p>
-                Amor ao próximo, fé cristã, excelência no ensino, inclusão
-                social, desenvolvimento integral e comprometimento com a
-                comunidade.
-              </p>
+              <h3>English Club</h3>
+              <p>Crianças de 8 a 12 anos.</p>
+              <a href="#" class="btn btn-primary" onclick="showPage('atividades')">Saiba mais</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">🏐</div>
+            <div class="card-content">
+              <h3>Vôlei Recreativo</h3>
+              <p>A partir de 12 anos.</p>
+              <a href="#" class="btn btn-primary" onclick="showPage('atividades')">Saiba mais</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">📖</div>
+            <div class="card-content">
+              <h3>Conexão Ágape</h3>
+              <p>Para todas as idades!</p>
+              <a href="#" class="btn btn-primary" onclick="showPage('atividades')">Saiba mais</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">🥋</div>
+            <div class="card-content">
+              <h3>Kung Fu</h3>
+              <p>Crianças de 7 a 15 anos.</p>
+              <a href="#" class="btn btn-primary" onclick="showPage('atividades')">Saiba mais</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-image">🎸</div>
+            <div class="card-content">
+              <h3>Violão</h3>
+              <p>Crianças de 7 a 15 anos.</p>
+              <a href="#" class="btn btn-primary" onclick="showPage('atividades')">Saiba mais</a>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+    </div>
 
-      <!-- Realização e Parceria -->
-      <div class="parceiros-section">
-        <h3>Realização e Parceria</h3>
-        <div class="parceiros-logos">
-          <div class="parceiros-item">
-            <img src="OMlogo.png" alt="Logo OM Brasil">
-            <p>OM Brasil</p>
+    <!-- SOBRE NÓS PAGE -->
+    <div id="sobre" class="page">
+      <section style="padding-top: 4rem">
+        <h2>Sobre o Projeto</h2>
+        <p class="subtitle">Nossa história, missão e valores</p>
+
+        <div class="about-content">
+          <div class="about-image">
+            ✝️
+            <!-- TODO: Adicionar foto da equipe -->
           </div>
-          <div class="parceiros-item">
-            <img src="sportslinklogo.png" alt="Logo Sportslink">
-            <p>Sportslink</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <!-- ATIVIDADES PAGE -->
-  <div id="atividades" class="page">
-    <section style="padding-top: 4rem">
-      <h2>Nossas Atividades</h2>
-      <p class="subtitle">
-        Conheça todas as atividades oferecidas gratuitamente pelo Projeto
-        Ágape
-      </p>
-
-      <div class="cards-container">
-        <div class="card">
-          <div class="card-image">🩰</div>
-          <div class="card-content">
-            <h3>Ballet</h3>
+          <div class="about-text">
+            <h3 style="color: var(--primary); margin-bottom: 1rem">
+              Quem Somos
+            </h3>
             <p>
-              Aulas de ballet clássico que desenvolvem coordenação motora,
-              disciplina, postura e expressão artística. Uma atividade que
-              transforma meninas em bailarinas confiantes.
+              O Projeto Ágape é uma iniciativa de SportsLink Brasil. Um ministério da OM Brasil dedicado a ser uma comunidade vibrante de seguidores de Cristo que serve através do esporte, artes e educação, na região Norte de São José dos Campos – São Paulo.
             </p>
             <p>
-              <strong>Horários:</strong>
-              <!-- TODO: Adicionar horários reais -->
+              A transformação de vidas começa quando nos unimos em propósito e ação! Há 11 anos o Projeto Ágape vai além de ser apenas um programa de esportes, arte ou educação. Nossa missão é impactar profundamente a vida de crianças, adolescentes e famílias da região Norte de São José dos Campos, trazendo esperança, fé e transformação através do amor de Cristo.
             </p>
-            <p style="color: #999">Terças e quintas, 14h às 16h</p>
-            <a href="#" class="btn btn-primary" onclick="showPage('contato')">Quero participar</a>
           </div>
         </div>
 
-        <div class="card">
-          <div class="card-image">⚽</div>
-          <div class="card-content">
-            <h3>Futebol</h3>
-            <p>
-              Treinos de futebol que ensinam muito mais que técnica: trabalho
-              em equipe, respeito, disciplina e valores cristãos. Formamos
-              atletas e cidadãos.
-            </p>
-            <p>
-              <strong>Horários:</strong>
-              <!-- TODO: Adicionar horários reais -->
-            </p>
-            <p style="color: #999">Segundas e quartas, 15h às 17h</p>
-            <a href="#" class="btn btn-primary" onclick="showPage('contato')">Quero participar</a>
+        <div style="margin-top: 4rem">
+          <h3 style="color: var(--primary); font-size: 2rem; margin-bottom: 2rem">
+            Nossa Visão e Estratégia
+          </h3>
+          <div class="cards-container">
+            <div class="card">
+              <div class="card-content">
+                <h3>👁️ Visão</h3>
+                <p>
+                  Ver comunidades vibrantes de seguidores de Jesus em todos os lugares. Queremos ser um espaço de acolhimento, onde o amor de Deus transforma vidas e forma uma geração forte em fé, valores e propósito.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content">
+                <h3>⚠️ Desafio</h3>
+                <p>
+                  Em muitas comunidades ao redor do mundo, crianças, adolescentes e famílias enfrentam desafios diários. São expostas a ambientes de risco, falta de recursos e ausência de suporte espiritual e emocional. O Projeto Ágape busca preencher essa lacuna oferecendo um ambiente seguro e inspirador.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content">
+                <h3>� Estratégia</h3>
+                <p>
+                  Conectar e construir valores sólidos, desenvolver habilidades para a vida e compartilhar a esperança do Evangelho. Queremos ser um lugar de transformação que reflita o amor de Deus em ação!
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="card">
-          <div class="card-image">🏐</div>
-          <div class="card-content">
-            <h3>Vôlei</h3>
-            <p>
-              Aulas de vôlei que promovem coordenação, agilidade, espírito
-              esportivo e união. Uma modalidade que ensina a importância do
-              trabalho coletivo.
-            </p>
-            <p>
-              <strong>Horários:</strong>
-              <!-- TODO: Adicionar horários reais -->
-            </p>
-            <p style="color: #999">Terças e quintas, 16h às 18h</p>
-            <a href="#" class="btn btn-primary" onclick="showPage('contato')">Quero participar</a>
+        <div style="margin-top: 4rem">
+          <h3 style="color: var(--primary); font-size: 2rem; margin-bottom: 2rem">
+            Áreas de Atuação
+          </h3>
+          <div class="cards-container">
+             <div class="card">
+              <div class="card-content">
+                <h3>⚽ Ministério Esportivo</h3>
+                <p>Usando o esporte como ferramenta para ensinar sobre Jesus, caráter, disciplina e trabalho em equipe.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content">
+                <h3>🎨 Arte e Educação</h3>
+                <p>Programas criativos que inspiram aprendizado, expressão e propósito.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content">
+                <h3>🙏 Discipulado</h3>
+                <p>Caminhando ao lado de jovens e famílias na fé e crescimento espiritual.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content">
+                <h3>🤝 Engajamento Comunitário</h3>
+                <p>Fortalecendo laços e criando rede de apoio local.</p>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="card">
-          <div class="card-image">🇬🇧</div>
-          <div class="card-content">
-            <h3>Inglês</h3>
-            <p>
-              Ensino de inglês de qualidade para abrir portas, ampliar
-              horizontes e criar oportunidades futuras. Aprender um novo
-              idioma é transformador!
-            </p>
-            <p>
-              <strong>Horários:</strong>
-              <!-- TODO: Adicionar horários reais -->
-            </p>
-            <p style="color: #999">Quartas e sextas, 14h às 16h</p>
-            <a href="#" class="btn btn-primary" onclick="showPage('contato')">Quero participar</a>
+        <!-- Realização e Parceria -->
+        <div class="parceiros-section">
+          <h3>Realização e Parceria</h3>
+          <div class="parceiros-logos">
+            <div class="parceiros-item">
+              <img src="images/OMlogo.png" alt="Logo OM Brasil" />
+              <p>OM Brasil</p>
+            </div>
+            <div class="parceiros-item">
+              <img src="images/sportslinklogo.png" alt="Logo Sportslink" />
+              <p>Sportslink</p>
+            </div>
           </div>
         </div>
+      </section>
+    </div>
 
-        <div class="card">
-          <div class="card-image">🎸</div>
-          <div class="card-content">
-            <h3>Violão</h3>
-            <p>
-              Aulas de violão para desenvolver habilidades musicais, expressão
-              artística e fortalecer a autoestima. A música transforma e
-              liberta!
-            </p>
-            <p>
-              <strong>Horários:</strong>
-              <!-- TODO: Adicionar horários reais -->
-            </p>
-            <p style="color: #999">Segundas, 16h às 18h</p>
-            <a href="#" class="btn btn-primary" onclick="showPage('contato')">Quero participar</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-image">🧁</div>
-          <div class="card-content">
-            <h3>Confeitaria</h3>
-            <p style="
-                  background: #fff8e1;
-                  padding: 1rem;
-                  border-radius: 10px;
-                  margin-bottom: 1rem;
-                ">
-              🎉 <strong>Em breve!</strong> A partir do próximo ano
-            </p>
-            <p>
-              Aulas de confeitaria voltadas especialmente para adultos. Uma
-              oportunidade de aprender uma profissão, gerar renda e fortalecer
-              vínculos comunitários.
-            </p>
-            <p><strong>Público:</strong> Adultos (especialmente mães)</p>
-            <a href="#" class="btn btn-primary" onclick="showPage('contato')">Quero saber mais</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <div class="card-image">📖</div>
-          <div class="card-content">
-            <h3>Estudos Bíblicos</h3>
-            <p>
-              Momentos especiais de aprendizado, reflexão e fortalecimento da
-              fé através da Palavra de Deus. Crescimento espiritual em
-              comunidade.
-            </p>
-            <p>
-              <strong>Horários:</strong>
-              <!-- TODO: Adicionar horários reais -->
-            </p>
-            <p style="color: #999">Sábados, 10h às 12h</p>
-            <a href="#" class="btn btn-primary" onclick="showPage('contato')">Quero participar</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
-
-  <!-- COMO AJUDAR PAGE -->
-  <div id="ajudar" class="page">
-    <section style="padding-top: 4rem">
-      <h2>Como Você Pode Ajudar</h2>
-      <p class="subtitle">
-        Existem várias formas de fazer a diferença na vida de muitas pessoas
-      </p>
-
-      <!-- QUERO DOAR -->
-      <div style="margin-top: 4rem">
-        <h3 style="
-              color: var(--primary);
-              font-size: 2.5rem;
-              text-align: center;
-              margin-bottom: 3rem;
-            ">
-          💝 Quero Doar
-        </h3>
-        <div class="donation-options">
-          <div class="donation-card">
-            <div style="font-size: 4rem; margin-bottom: 1rem">🩰</div>
-            <h3>Reforma da Sala de Ballet</h3>
-            <p>
-              Ajude a criar um espaço digno e inspirador para nossas
-              bailarinas treinarem e se desenvolverem.
-            </p>
-            <a href="#" class="btn btn-primary" onclick="alert('TODO: Integrar sistema de doação')">Quero doar para
-              isso</a>
-          </div>
-
-          <div class="donation-card">
-            <div style="font-size: 4rem; margin-bottom: 1rem">🔥</div>
-            <h3>Fogão Industrial</h3>
-            <p>
-              Precisamos de um fogão industrial para as aulas de confeitaria e
-              preparo de lanches para as crianças.
-            </p>
-            <a href="#" class="btn btn-primary" onclick="alert('TODO: Integrar sistema de doação')">Quero doar para
-              isso</a>
-          </div>
-
-          <div class="donation-card">
-            <div style="font-size: 4rem; margin-bottom: 1rem">🛒</div>
-            <h3>Cestas Básicas</h3>
-            <p>
-              Doe cestas básicas para famílias em situação de vulnerabilidade
-              atendidas pelo projeto.
-            </p>
-            <a href="#" class="btn btn-primary" onclick="alert('TODO: Integrar sistema de doação')">Quero doar para
-              isso</a>
-          </div>
-
-          <div class="donation-card">
-            <div style="font-size: 4rem; margin-bottom: 1rem">💰</div>
-            <h3>Contribuição Mensal</h3>
-            <p>
-              Seja um doador recorrente e ajude a manter todas as atividades
-              do projeto funcionando.
-            </p>
-            <a href="#" class="btn btn-primary" onclick="alert('TODO: Integrar sistema de doação')">Quero contribuir
-              mensalmente</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- QUERO SER VOLUNTÁRIO -->
-      <div style="margin-top: 6rem">
-        <h3 style="
-              color: var(--primary);
-              font-size: 2.5rem;
-              text-align: center;
-              margin-bottom: 3rem;
-            ">
-          🙋 Quero Ser Voluntário
-        </h3>
-        <div style="
-              background: var(--light);
-              padding: 3rem;
-              border-radius: 20px;
-              text-align: center;
-              max-width: 700px;
-              margin: 0 auto;
-            ">
-          <p style="font-size: 1.3rem; margin-bottom: 2rem">
-            Você tem tempo e talento para compartilhar? Venha fazer parte da
-            nossa equipe de voluntários!
-          </p>
-          <p style="font-size: 1.1rem; margin-bottom: 2rem">
-            Entre em contato conosco e vamos conversar sobre como você pode
-            contribuir!
-          </p>
-          <a href="#" class="btn btn-primary" onclick="showPage('contato')">Quero me voluntariar</a>
-        </div>
-
-        <!-- TODO: No futuro, integrar lista dinâmica de vagas de voluntariado via API -->
-      </div>
-
-      <!-- DEMANDAS ABERTAS -->
-      <div style="margin-top: 6rem">
-        <h3 style="
-              color: var(--primary);
-              font-size: 2.5rem;
-              text-align: center;
-              margin-bottom: 3rem;
-            ">
-          📋 Demandas Abertas
-        </h3>
-        <p style="
-              text-align: center;
-              font-size: 1.2rem;
-              margin-bottom: 3rem;
-              max-width: 700px;
-              margin-left: auto;
-              margin-right: auto;
-            ">
-          Estas são algumas necessidades específicas do projeto. Se você pode
-          ajudar com alguma delas, ficaremos muito gratos!
+    <!-- ATIVIDADES PAGE -->
+    <div id="atividades" class="page">
+      <section style="padding-top: 4rem">
+        <h2>Nossas Atividades</h2>
+        <p class="subtitle">
+          Conheça todas as atividades oferecidas gratuitamente pelo Projeto
+          Ágape
         </p>
 
         <div class="cards-container">
           <div class="card">
+            <div class="card-image">⚽</div>
             <div class="card-content">
-              <h3>🎸 Professor de Violão</h3>
-              <p>
-                Precisamos de um professor de violão voluntário para ampliar
-                nossas turmas e atender mais alunos.
-              </p>
-              <a href="#" class="btn btn-primary" onclick="showPage('contato')">Posso ajudar</a>
+              <h3>Futsal</h3>
+              <p>Crianças de 5 a 16 anos.</p>
+              <p><strong>Sub 8 e 10:</strong> Terça-feira, das 18h às 21h</p>
+              <p><strong>Sub 12, 14 e 16:</strong> Quinta-feira, das 18h às 21h</p>
+              <a href="#" class="btn btn-primary" onclick="showPage('contato')">Quero participar</a>
             </div>
           </div>
 
           <div class="card">
+            <div class="card-image">🩰</div>
             <div class="card-content">
-              <h3>🏐 Ajudante de Vôlei</h3>
-              <p>
-                Buscamos um assistente para as aulas de vôlei, que possa
-                ajudar com a organização e suporte aos alunos.
-              </p>
-              <a href="#" class="btn btn-primary" onclick="showPage('contato')">Posso ajudar</a>
+              <h3>Ballet</h3>
+              <p>Crianças de 3 a 16 anos.</p>
+              <p><strong>Todas as terças:</strong></p>
+              <p>Ballet 1 — 3 a 10 anos</p>
+              <p>Ballet 2 — 11 a 16 anos</p>
+              <a href="#" class="btn btn-primary" onclick="showPage('contato')">Quero participar</a>
             </div>
           </div>
 
           <div class="card">
+            <div class="card-image">�🇧</div>
             <div class="card-content">
-              <h3>🎨 Pintura do Espaço do Ballet</h3>
-              <p>
-                Precisamos de voluntários para pintar e revitalizar o espaço
-                onde acontecem as aulas de ballet.
-              </p>
-              <a href="#" class="btn btn-primary" onclick="showPage('contato')">Posso ajudar</a>
+              <h3>English Club</h3>
+              <p>Crianças de 8 a 12 anos.</p>
+              <p><strong>Segunda-feira:</strong> das 18h às 19h30</p>
+              <a href="#" class="btn btn-primary" onclick="showPage('contato')">Quero participar</a>
             </div>
           </div>
 
           <div class="card">
+            <div class="card-image">🏐</div>
             <div class="card-content">
-              <h3>📚 Material Didático</h3>
-              <p>
-                Precisamos de doações de material escolar, livros didáticos e
-                material de arte para nossas atividades.
-              </p>
-              <a href="#" class="btn btn-primary" onclick="showPage('contato')">Posso ajudar</a>
+              <h3>Vôlei Recreativo</h3>
+              <p>A partir de 12 anos.</p>
+              <p><strong>Todas as segundas:</strong> das 18h às 20h30</p>
+              <a href="#" class="btn btn-primary" onclick="showPage('contato')">Quero participar</a>
             </div>
           </div>
 
           <div class="card">
+            <div class="card-image">📖</div>
             <div class="card-content">
-              <h3>💻 Apoio com Tecnologia</h3>
-              <p>
-                Buscamos voluntários para ajudar com divulgação nas redes
-                sociais, design gráfico e manutenção do site.
-              </p>
-              <a href="#" class="btn btn-primary" onclick="showPage('contato')">Posso ajudar</a>
+              <h3>Conexão Ágape</h3>
+              <p>Para todas as idades!</p>
+              <p><strong>Estudo Bíblico:</strong> das 18h às 19h</p>
+              <a href="#" class="btn btn-primary" onclick="showPage('contato')">Quero participar</a>
             </div>
           </div>
 
           <div class="card">
+            <div class="card-image">🥋</div>
             <div class="card-content">
-              <h3>🚐 Transporte</h3>
-              <p>
-                Precisamos de apoio para transporte de materiais, equipamentos
-                e eventualmente dos alunos.
-              </p>
-              <a href="#" class="btn btn-primary" onclick="showPage('contato')">Posso ajudar</a>
+              <h3>Kung Fu</h3>
+              <p>Crianças de 7 a 15 anos.</p>
+              <p><strong>Quartas e sextas-feiras:</strong> das 19h às 20h30</p>
+              <a href="#" class="btn btn-primary" onclick="showPage('contato')">Quero participar</a>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">🎸</div>
+            <div class="card-content">
+              <h3>Violão</h3>
+              <p>Crianças de 7 a 15 anos.</p>
+              <p><strong>Sextas-feiras:</strong> das 19h às 20h</p>
+              <a href="#" class="btn btn-primary" onclick="showPage('contato')">Quero participar</a>
             </div>
           </div>
         </div>
+      </section>
+    </div>
 
-        <!-- TODO: No futuro, tornar essa seção dinâmica com dados de uma API ou banco de dados -->
-      </div>
-    </section>
-  </div>
+    <!-- COMO AJUDAR PAGE -->
+    <div id="ajudar" class="page">
+      <section style="padding-top: 4rem">
+        <h2>Faça Parte</h2>
+        <p class="subtitle">
+          Junte-se a nós e nos ajude a seguir transformando vidas e comunidades!
+        </p>
 
-  <!-- CONTATO PAGE -->
-  <div id="contato" class="page">
-    <section style="padding-top: 4rem">
-      <h2>Entre em Contato</h2>
-      <p class="subtitle">Estamos aqui para ajudar. Mande sua mensagem!</p>
-
-      <div class="contact-container">
-        <form class="contact-form" onsubmit="handleSubmit(event)">
-          <div class="form-group">
-            <label for="nome">Seu Nome</label>
-            <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo" />
+        <div class="cards-container" style="margin-top: 4rem">
+          <div class="card">
+            <div class="card-image">🙏</div>
+            <div class="card-content">
+              <h3>Ore Conosco</h3>
+              <p>
+                Cremos que o resultado depende somente de Deus.
+              </p>
+              <a href="#" class="btn btn-primary" onclick="showPage('contato')">Quero orar</a>
+            </div>
           </div>
 
-          <div class="form-group">
-            <label for="email">Seu E-mail</label>
-            <input type="email" id="email" name="email" required placeholder="seu@email.com" />
+          <div class="card">
+            <div class="card-image">🙋</div>
+            <div class="card-content">
+              <h3>Seja Voluntário</h3>
+              <p>
+                Sua dedicação pode mudar vidas.
+              </p>
+              <a href="#" class="btn btn-primary" onclick="showPage('contato')">Quero ser voluntário</a>
+            </div>
           </div>
 
-          <div class="form-group">
-            <label for="telefone">Seu Telefone</label>
-            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" />
+          <div class="card">
+            <div class="card-image">💝</div>
+            <div class="card-content">
+              <h3>Seja Parceiro Financeiro</h3>
+              <p>
+                Contribuições fortalecem e expandem as atividades.
+              </p>
+              <a href="#" class="btn btn-primary" onclick="showPage('contato')">Quero doar</a>
+            </div>
           </div>
 
-          <div class="form-group">
-            <label for="assunto">Assunto</label>
-            <input type="text" id="assunto" name="assunto" required placeholder="Sobre o que você quer falar?" />
+          <div class="card">
+            <div class="card-image">📢</div>
+            <div class="card-content">
+              <h3>Compartilhe</h3>
+              <p>
+                Compartilhe nosso projeto — inspire outros a se envolverem.
+              </p>
+              <a href="https://www.instagram.com/proj.agape/" target="_blank" class="btn btn-primary">Ir para Instagram</a>
+            </div>
           </div>
+        </div>
+      </section>
+    </div>
 
-          <div class="form-group">
-            <label for="mensagem">Sua Mensagem</label>
-            <textarea id="mensagem" name="mensagem" required placeholder="Escreva sua mensagem aqui..."></textarea>
-          </div>
+    <!-- CONTATO PAGE -->
+    <div id="contato" class="page">
+      <section style="padding-top: 4rem">
+        <h2>Entre em Contato</h2>
+        <p class="subtitle">Estamos aqui para ajudar. Mande sua mensagem!</p>
 
-          <button type="submit" class="btn btn-primary" style="width: 100%">
-            Enviar Mensagem
-          </button>
-        </form>
+        <div class="contact-container">
+          <form class="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+              <label for="nome">Seu Nome</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                required
+                placeholder="Digite seu nome completo"
+              />
+            </div>
 
-        <div class="contact-info">
-          <h3>Informações de Contato</h3>
+            <div class="form-group">
+              <label for="email">Seu E-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="seu@email.com"
+              />
+            </div>
 
-          <div class="contact-item">
-            <strong>📱 WhatsApp</strong>
-            <a href="https://wa.me/5512000000000" style="color: var(--primary); text-decoration: none">
-              <!-- TODO: Adicionar número real do WhatsApp -->
-              (12) 00000-0000
-            </a>
-            <p style="margin-top: 0.5rem; color: #666">
-              Clique para conversar conosco!
-            </p>
-          </div>
+            <div class="form-group">
+              <label for="telefone">Seu Telefone</label>
+              <input
+                type="tel"
+                id="telefone"
+                name="telefone"
+                placeholder="(00) 00000-0000"
+              />
+            </div>
 
-          <div class="contact-item">
-            <strong>📧 E-mail</strong>
-            <!-- TODO: Adicionar e-mail real do projeto -->
-            <p>contato@projetoagapesjc.org.br</p>
-          </div>
+            <div class="form-group">
+              <label for="assunto">Assunto</label>
+              <input
+                type="text"
+                id="assunto"
+                name="assunto"
+                required
+                placeholder="Sobre o que você quer falar?"
+              />
+            </div>
 
-          <div class="contact-item">
-            <strong>📍 Endereço</strong>
-            <!-- TODO: Adicionar endereço real -->
-            <p>
-              Rua Exemplo, 123<br />
-              Bairro - São José dos Campos, SP<br />
-              CEP: 12345-678
-            </p>
-          </div>
+            <div class="form-group">
+              <label for="mensagem">Sua Mensagem</label>
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                required
+                placeholder="Escreva sua mensagem aqui..."
+              ></textarea>
+            </div>
 
-          <div class="contact-item">
-            <strong>📷 Instagram</strong>
-            <a href="https://www.instagram.com/projetoagapesjc/" target="_blank"
-              style="color: var(--primary); text-decoration: none">
-              @projetoagapesjc
-            </a>
-            <p style="margin-top: 0.5rem; color: #666">
-              Siga-nos e acompanhe nossas atividades!
-            </p>
-          </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%">
+              Enviar Mensagem
+            </button>
+          </form>
 
-          <div style="
+          <div class="contact-info">
+            <h3>Informações de Contato</h3>
+
+            <div class="contact-item">
+              <strong>📱 WhatsApp</strong>
+              <a
+                href="https://wa.me/5512000000000"
+                style="color: var(--primary); text-decoration: none"
+              >
+                <!-- TODO: Adicionar número real do WhatsApp -->
+                (12) 00000-0000
+              </a>
+              <p style="margin-top: 0.5rem; color: #666">
+                Clique para conversar conosco!
+              </p>
+            </div>
+
+            <div class="contact-item">
+              <strong>📧 E-mail</strong>
+              <!-- TODO: Adicionar e-mail real do projeto -->
+              <p>contato@projetoagapesjc.org.br</p>
+            </div>
+
+            <div class="contact-item">
+              <strong>📍 Endereço</strong>
+              <!-- TODO: Adicionar endereço real -->
+              <p>
+                Rua Alto da Boa Vista, 1090<br />
+                Altos de Santana – São José dos Campos/SP<br />
+                CEP: 12214-150
+              </p>
+            </div>
+
+            <div class="contact-item">
+              <strong>📷 Instagram</strong>
+              <a
+                href="https://www.instagram.com/proj.agape/?hl=en"
+                target="_blank"
+                style="color: var(--primary); text-decoration: none"
+              >
+                @proj.agape
+              </a>
+              <p style="margin-top: 0.5rem; color: #666">
+                Siga-nos e acompanhe nossas atividades!
+              </p>
+            </div>
+
+            <div
+              style="
                 margin-top: 2rem;
                 padding: 1.5rem;
                 background: white;
                 border-radius: 10px;
-              ">
-            <strong style="color: var(--primary)">⏰ Horário de Atendimento</strong>
-            <!-- TODO: Adicionar horários reais -->
-            <p style="margin-top: 0.5rem">
-              Segunda a Sexta: 9h às 18h<br />
-              Sábado: 9h às 13h
-            </p>
+              "
+            >
+              <strong style="color: var(--primary)"
+                >⏰ Horário de Atendimento</strong
+              >
+              <!-- TODO: Adicionar horários reais -->
+              <p style="margin-top: 0.5rem">
+                Segunda a Sexta: 9h às 18h<br />
+                Sábado: 9h às 13h
+              </p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- GOOGLE MAPS -->
-      <div style="margin-top: 4rem">
-        <h3 style="
+        <!-- GOOGLE MAPS -->
+        <div style="margin-top: 4rem">
+          <h3
+            style="
               color: var(--primary);
               font-size: 2rem;
               margin-bottom: 2rem;
               text-align: center;
-            ">
-          📍 Nossa Localização
-        </h3>
+            "
+          >
+            📍 Nossa Localização
+          </h3>
 
-        <div style="
+          <div
+            style="
               width: 100%;
               height: 400px;
               border-radius: 20px;
               overflow: hidden;
-            ">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3668.2847066618033!2d-45.91575182468202!3d-23.15980677907781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc362353e32e0d%3A0xc96c6773ad820650!2sR.%20Alto%20da%20Boa%20Vista%2C%201090%20-%20Jardim%20Altos%20de%20Santana%2C%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos%20-%20SP%2C%2012214-150!5e0!3m2!1sen!2sbr!4v1763912239106!5m2!1sen!2sbr"
-            style="border: 0; width: 100%; height: 100%" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
+            "
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3668.2847066618033!2d-45.91575182468202!3d-23.15980677907781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc362353e32e0d%3A0xc96c6773ad820650!2sR.%20Alto%20da%20Boa%20Vista%2C%201090%20-%20Jardim%20Altos%20de%20Santana%2C%20S%C3%A3o%20Jos%C3%A9%20dos%20Campos%20-%20SP%2C%2012214-150!5e0!3m2!1sen!2sbr!4v1763912239106!5m2!1sen!2sbr"
+              style="border: 0; width: 100%; height: 100%"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
         </div>
-      </div>
-    </section>
-  </div>
+      </section>
+    </div>
 
-  <!-- FOOTER -->
-  <footer>
-    <div style="max-width: 1200px; margin: 0 auto">
-      <p style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem">
-        Projeto Ágape SJC
-      </p>
-      <p>Transformando vidas e comunidades através do amor de Cristo</p>
+    <!-- FOOTER -->
+    <footer>
+      <div style="max-width: 1200px; margin: 0 auto">
+        <p style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem">
+          <img src="images/agapeicon.png" alt="Logo do Projeto Ágape SJC" style="width: 100px">
+        </p>
+        <p>Transformando vidas e comunidades através do amor de Cristo</p>
 
-      <div class="social-links">
-        <a href="https://www.instagram.com/projetoagapesjc/" target="_blank" title="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16"> <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/></svg></a>
-        <a href="https://wa.me/5512000000000" target="_blank" title="WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg></a>
-        <!-- TODO: Adicionar links reais das redes sociais -->
-      </div>
+        <div class="social-links">
+          <a
+            href="https://www.instagram.com/proj.agape"
+            target="_blank"
+            title="Instagram"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-instagram"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"
+              /></svg
+          ></a>
+          <a href="https://wa.me/5512000000000" target="_blank" title="WhatsApp"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              fill="currentColor"
+              class="bi bi-whatsapp"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
+              /></svg
+          ></a>
+          <!-- TODO: Adicionar links reais das redes sociais -->
+        </div>
 
-      <div style="
+        <div
+          style="
             margin-top: 2rem;
             padding-top: 2rem;
             border-top: 1px solid rgba(255, 255, 255, 0.2);
-          ">
-        <p>Ligados à <strong>OM</strong> e ao <strong>Sportslink</strong></p>
-        <p style="
+          "
+        >
+          <p>UM MINISTÉRIO DA <strong>OM BRASIL</strong><br>Projeto Ágape – SportsLink Brasil</p>
+          <p
+            style="
               margin-top: 1rem;
               font-size: 0.9rem;
               color: rgba(255, 255, 255, 0.7);
-            ">
-          © 2025 Projeto Ágape SJC - Todos os direitos reservados
-        </p>
+            "
+          >
+            © 2025 Projeto Ágape SJC - Todos os direitos reservados
+          </p>
+        </div>
       </div>
-    </div>
-  </footer>
-  
-  <script src="script.js"></script>
-</body>
+    </footer>
 
+    <script src="script.js"></script>
+  </body>
 </html>
