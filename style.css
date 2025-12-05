@@ -452,6 +452,88 @@ footer p {
 }
 
 
+/* --- Google Maps --- */
+.map-wrapper {
+  margin-top: 5rem; 
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.map-wrapper h3 {
+  color: var(--primary);
+  font-size: 2.5rem; 
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.map-container {
+  width: 100%; 
+  height: 500px; 
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); 
+  border: 1px solid #e0e0e0;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+/* Carrosel */
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: #000; 
+}
+
+.hero-carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+}
+
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(241, 90, 41, 0.85) 0%, rgba(194, 16, 78, 0.85) 50%, rgba(255, 140, 0, 0.85) 100%); /* Maintain brand colors but transparent */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2; /* Ensure text is above the carousel */
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .menu-toggle {
@@ -498,54 +580,12 @@ footer p {
   .cards-container {
     grid-template-columns: 1fr;
   }
-}
 
-/* HERO CAROUSEL */
-.hero {
-  position: relative;
-  overflow: hidden;
-  /* Remove default background since we use slides now */
-  background: #000; 
-}
-
-.hero-carousel {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-}
-
-.carousel-slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  opacity: 0;
-  transition: opacity 1.5s ease-in-out;
-}
-
-.carousel-slide.active {
-  opacity: 1;
-}
-
-.carousel-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, rgba(241, 90, 41, 0.85) 0%, rgba(194, 16, 78, 0.85) 50%, rgba(255, 140, 0, 0.85) 100%); /* Maintain brand colors but transparent */
-  z-index: 1;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2; /* Ensure text is above the carousel */
-  max-width: 800px;
-  margin: 0 auto;
+  .map-container {
+    height: 350px; /* Altura no celular */
+  }
+  
+  .map-wrapper h3 {
+    font-size: 1.8rem;
+  }
 }
